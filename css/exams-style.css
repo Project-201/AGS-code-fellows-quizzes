@@ -1,13 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body{
-	background: #D8C3A5;
-	color: #E98074;
+	background: #DC8665;
+	color: #534666;
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 }
 
 #container{
 	width: 60%;
-	background: #EAE7DC;
+	background: #fff ;
 	margin: 20px auto;
 	overflow: auto;
 	padding: 25px;
@@ -28,7 +34,7 @@ header h1{
 header p{
 	padding: 0;
 	margin-top: 5px;
-	color: #8E8D8A;
+	color: rgb(24, 17, 7);
 }
 
 section{
@@ -40,23 +46,49 @@ footer{
 }
 
 input[type='submit']{
-	background: #D8C3A5;
+	text-align: center;
+	background: #DC8665;
 	border: 0;
-	color: #E98074;
+	color: rgb(32, 28, 21);
 	font-size: 20px;
 	font-weight: bold;
 	padding: 10px 15px;
 	cursor: pointer;
+	
+
+
 }
 
 #results h3{
-	background: #D8C3A5;
-	padding: 10px;
-	margin: 10px 0;
-
+	background: #DC8665;
+	/* margin: 10px 0; */
 }
 
 #results span{
-	color: #000;
+	color: #fff;
 	font-weight: bold;
 }
+div {
+	border : 1px solid #ddd ;
+	border-radius: 8px;
+	margin: 10px ;
+	padding: 15px;
+	background-color: rgb(204, 166, 151);
+
+}
+input{
+	margin: 10px 10px 10px 50px;
+	
+}
+h3{
+
+	
+	padding: 10px;
+
+	border-radius: 8px;
+	margin: 10px ;
+	padding: 15px;
+
+
+}
+/* img{} */
