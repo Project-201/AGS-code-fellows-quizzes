@@ -61,7 +61,7 @@ input[type='submit']{
 	font-weight: bold;
 }
 h3:hover{
-	background-color: aquamarine;
+	background-color: rgb(134, 184, 230);
 } 
 
   .submit:hover{
