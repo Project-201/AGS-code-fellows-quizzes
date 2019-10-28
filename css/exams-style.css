@@ -68,6 +68,7 @@ input[type='submit']{
 	color: #fff;
 	font-weight: bold;
 }
+
 div {
 	border : 1px solid #ddd ;
 	border-radius: 8px;
@@ -92,3 +93,4 @@ h3{
 
 }
 /* img{} */
+
