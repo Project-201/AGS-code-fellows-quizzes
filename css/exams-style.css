@@ -60,3 +60,13 @@ input[type='submit']{
 	color: #000;
 	font-weight: bold;
 }
+h3:hover{
+	background-color: aquamarine;
+} 
+
+  .submit:hover{
+	font-size: 150%;
+	color: red;
+  }
+  
+  

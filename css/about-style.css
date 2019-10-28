@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    color : blue ;
+    border : 3px solid pink ;
+    font-size: 30px;
+    
+}
+ul {
+    
+        list-style-type: square;
+      color : blue ;
+      font-size: 20px;
+      
+}
+p{
+    font-size: 30px;
+    color: aquamarine;
+}
+.names{
+    
+    border : 2px solid pink ;
+}
