@@ -54,9 +54,14 @@ input[type='submit']{
 	font-weight: bold;
 	padding: 10px 15px;
 	cursor: pointer;
-	
+}
 
-
+#no-answers{
+ color:red;
+ font-size: 20px;
+ background-color: none;
+ margin: 0 50px ;
+ display: none;
 }
 
 #results h3{
@@ -79,7 +84,7 @@ div {
 }
 input{
 	margin: 10px 10px 10px 50px;
-	
+	/* display: block; */
 }
 h3{
 
@@ -93,4 +98,15 @@ h3{
 
 }
 /* img{} */
+ button#next-exam{
 
+	background-color: #DC8665;
+    margin: 25px 0px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 1.25em;
+    visibility: visible;
+	display: none;
+
+}
