@@ -46,7 +46,7 @@ footer{
 }
 
 input[type='submit']{
-	text-align: center;
+	/* text-align: center; */
 	background: #DC8665;
 	border: 0;
 	color: rgb(32, 28, 21);
