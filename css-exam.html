@@ -11,20 +11,23 @@
 			
 					
 		<header>
+				<img src="https://image4.owler.com/logo/code-fellows_owler_20160309_233545_large.png
+				" alt="code fellows logo">
 			<h1>CSS Quiz</h1>
 			<p>Test your knowledge in <strong>CSS fundamentals</strong></p>
 		</header>
 		<section>
 
-			<form name="quizForm" onsubmit="return submitAnswers()">
-					<div>
+			<form name="quizForm" >
+				<section id="form">
+				<!-- <div>
                 <h3>1. How do you make a list that lists its items with squares?  </h3>
 				<input type="radio" name="q1" value="a" id="q1a"> list-style-type: square;<br>
 				<input type="radio" name="q1" value="b" id="q1b"> list-type: square;<br>
 				<input type="radio" name="q1" value="c" id="q1c"> list: square;<br>
 				<input type="radio" name="q1" value="d" id="q1d"> list;<br>
-			</div>
-			<div>
+			</div> -->
+			<!-- <div>
 				<h3>2. What does CSS stand for?  </h3>
 				<input type="radio" name="q2" value="a" id="q2a"> Computer Style Sheets<br>
 				<input type="radio" name="q2" value="b" id="q2b"> Colorful Style Sheets<br>
@@ -90,13 +93,20 @@
 				<input type="radio" name="q10" value="b" id="q10b"> margin-left <br>
 				<input type="radio" name="q10" value="c" id="q10c"> indent<br>
                 <input type="radio" name="q10" value="d" id="q10d"> border <br>
-			</div>
+			</div> -->
 
 
-				<br><br>
-				<input id="submit" type="submit" value="Submit Answers">
+				
+			</section>	
+			<br><br>
+				<input type="submit" value="Submit Answers" id="submit-exam">
+				<button id="next-exam"><a href="js-exam.html">JavaScript TEST</a></button>
+
 
 			</form>
+				<p id="no-answers">
+					You still didn't answer all the qustions.
+				</p>
 			<div id="results"></div>
 
 		</section>
