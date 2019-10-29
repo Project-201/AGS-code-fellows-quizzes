@@ -12,20 +12,20 @@ function submitAnswers(){
 	var q7 = document.forms["quizForm"]["q7"].value;
 	var q8 = document.forms["quizForm"]["q8"].value;
     var q9 = document.forms["quizForm"]["q9"].value;
-    var q10 = document.forms["quizForm"]["q10"].value;
+	var q10 = document.forms["quizForm"]["q10"].value;
+	console.log( 'jdk' , eval('q1')) ;
 
     //Validation
 
-    for (var i = 1; i <= 10; i++) {
-    	if(eval('q'+i) == null || eval('q'+i) == ''){
-	    	alert('You missed question '+i);
-	    	return false;
-    	}
-    }
+    // for (var i = 1; i <= 10; i++) {
+    // 	if(eval('q'+i) == null || eval('q'+i) == ''){
+	//     	return false;
+    // 	}
+    // }
 
     //Set Answer
     var answers = ["c","a","c","c","a","c","b","d","b","b"];
-
+	 
     //Check Answer
     for(var i=0;i<10;i++){
 	    if(eval('q'+(i+1)) == answers[i]){
