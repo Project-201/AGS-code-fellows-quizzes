@@ -66,7 +66,8 @@ function submitAnswers(){
     var q7 = document.forms["quizForm"]["q7"].value;
     var q8 = document.forms["quizForm"]["q8"].value;
     var q9 = document.forms["quizForm"]["q9"].value;
-    var q10 = document.forms["quizForm"]["q10"].value;
+	var q10 = document.forms["quizForm"]["q10"].value;
+	console.log( 'jdk' , eval('q1')) ;
 
     //Validation
 
