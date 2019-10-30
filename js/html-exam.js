@@ -94,10 +94,62 @@ function submitAnswers(){
         noAnswer.setAttribute('style','display:none');
     }
 
-    return false;
+    // return false;
     
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*************************************************** */
 // var question = [

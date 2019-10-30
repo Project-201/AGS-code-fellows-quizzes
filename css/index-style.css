@@ -131,17 +131,24 @@ section img{
   /* border: 1px solid black; */
   display: block;
 }
-#input-name, #welcome-message{
+#input-name, #warning-message, #welcome-message{
   width: 80%;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
 }
-#welcome-message{
-  /* display: none; */
-  font-size: 28px;
-  font-weight: bolder;
+#warning-message{
+  display: none;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
 }
+#welcome-message{
+	display: none;
+	color: blue;
+	font-size: 20px;
+	font-weight: bold;
+  }
 #exams{
   display: none;
 }
