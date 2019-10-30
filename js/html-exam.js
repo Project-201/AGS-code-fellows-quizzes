@@ -58,7 +58,7 @@ function submitAnswers(){
     var q8 = document.forms["quizForm"]["q8"].value;
     var q9 = document.forms["quizForm"]["q9"].value;
 	var q10 = document.forms["quizForm"]["q10"].value;
-	console.log( 'jdk' , eval('q1')) ;
+	// console.log( 'jdk' , eval('q1')) ;
 
     //Validation
 
@@ -84,7 +84,7 @@ function submitAnswers(){
 
     //Display Results
     var results = document.getElementById('results');
-    results.innerHTML = '<h3>Result: You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
+    results.innerHTML = '<h3>Result: You scored&nbsp; <span>'+score+'</span>&nbsp; out of &nbsp;<span>'+total+'&nbsp;</span></h3>';
 
     // alert('You scored '+score+' out of '+total);
     var nextExam = document.getElementById("next-exam");

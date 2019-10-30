@@ -9,26 +9,94 @@ body{
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 }
-header{
+.clear{
+	clear: both;
+	display: none;
+}
+a{
+  text-decoration: none;
+}
+header{  
+	font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  min-height: 100px;
+  line-height: 100px;
+}
+header a {
+  margin: 0 25px;
+  padding: 10px;
+  color: black;
+}
+hr{
+  width: 90%;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+h1{
+  padding: 40px 0;
+  text-align: center;
+  font-weight: bolder;
+}
+header nav{
+  float: right;
+}
+
+/* header{
 	text-align: center;
 	border-bottom: #fff solid 3px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
-}
+} */
 #aboutUs{
-	width: 60%;
+  width: 60%;
+  border-radius: 10px;
 	background: #fff ;
 	margin: 20px auto;
-	overflow: auto;
-	padding: 25px;
+  box-shadow: -1px -1px 10px 2px #fff;
 }
-div {
+div{
     border : 1px solid #ddd ;
 	border-radius: 8px;
-	margin: 10px ;
-	padding: 15px;
+	margin: 15px ;
 	background-color: rgb(204, 166, 151);
 }
+aside.img{
+  float: left;
+  margin:15px 0 0 15px;
+	height: 80px;
+	background-color: none;
+}
+section img{
+  width: 200px;
+  display: block;
+}
+
+/* http://ianlunn.github.io/Hover/ */
+.hvr-overline-from-center {
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+}
+.hvr-overline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background:#DC8665;
+  height: 4px;
+  transition-property: left, right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+
+
 li{
 
 	border-bottom: #fff solid 3px;
@@ -40,7 +108,7 @@ li{
 div p{
 
 
-	padding: 10px;
+	/* padding: 10px; */
 
 	border-radius: 8px;
 	margin: 10px ;
@@ -48,8 +116,10 @@ div p{
 
 
 }
-
-
+footer{
+  text-align: center;
+  padding:35px;
+}
 
 
 

@@ -45,6 +45,31 @@ header a, footer a {
   padding: 10px;
   color: black;
 }
+
+label{
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+}
+#name{
+  padding:10px;
+  font-size: 20px;
+
+}
+#userName{
+  cursor: pointer;
+}
+section span#warnning-message{
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  display: none;
+}
+
+
+
+
+
 /* http://ianlunn.github.io/Hover/ */
 .hvr-overline-from-center {
   transform: perspective(1px) translateZ(0);
@@ -106,7 +131,20 @@ section img{
   /* border: 1px solid black; */
   display: block;
 }
-
+#input-name, #welcome-message{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+#welcome-message{
+  /* display: none; */
+  font-size: 28px;
+  font-weight: bolder;
+}
+#exams{
+  display: none;
+}
 button{
   border:0;
   padding: 15px;
