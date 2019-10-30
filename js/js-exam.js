@@ -10,19 +10,16 @@
 }
 
     var q =[
-		'<div><h3>1. Which is the correct way to write a JavaScript array?</h3><input type="radio" name="q1" value="a" id="q1a"> var txt = new Array(1:"arr",2:"kim",3:"jim");<br><input type="radio" name="q1" value="b" id="q1b"> var txt = new Array("arr ","kim","jim");<br><input type="radio" name="q1" value="c" id="q1c">  var txt = new Array:1=(" arr ")2=("kim")3=("jim");<br><input type="radio" name="q1" value="d" id="q1d"> var txt = new Array=" arr ","kim","jim";<br></div>',
-	'<div><h3>2.Which of the following is correct to write “Hello World” on the web page? </h3><input type="radio" name="q2" value="a" id="q2a"> System.out.println(“Hello World”)<br><input type="radio" name="q2" value="b" id="q2b"> document.write(“Hello World”) <br><input type="radio" name="q2" value="c" id="q2c"> print(“Hello World”);<br><input type="radio" name="q2" value="d" id="q2d">   response.write(“Hello World”);<br></div>',
-	'<div><h3>3. How would you write "Hello" in an alert box?</h3><input type="radio" name="q3" value="a" id="q3a"> msg("Hello");<br><input type="radio" name="q3" value="b" id="q3b"> alertbox("Hello");<br><input type="radio" name="q3" value="c" id="q3c"> print("Hello");<br>	<input type="radio" name="q3" value="d" id="q3d"> alert("Hello");<br></div>',
-
-	'<div><h3>4. A variable in javascript must start with which spcial character?</h3><input type="radio" name="q4" value="a" id="q4a"> @<br><input type="radio" name="q4" value="b" id="q4b"> $<br>	<input type="radio" name="q4" value="c" id="q4c"> #<br><input type="radio" name="q4" value="d" id="q4d"> No special character<br></div>',
-	'<div><h3>5. Which of the following method is used to evaluate a string of Java Script code in the context of the specified object? </h3><input type="radio" name="q5" value="a" id="q1a"> Eval<br><input type="radio" name="q5" value="b" id="q5b"> ParseDoule<br><input type="radio" name="q5" value="c" id="q5c"> ParseObject<br><input type="radio" name="q5" value="d" id="q5d">  Efloat<br></div>',
-	'<div><h3>6.How do you round the number 7.25, to the nearest integer?</h3><input type="radio" name="q6" value="a" id="q6a"> rnd(7.25)<br><input type="radio" name="q6" value="b" id="q6b"> Math.round(7.25)<br><input type="radio" name="q6" value="c" id="q6c"> round(7.25)<br><input type="radio" name="q6" value="d" id="q6d"> Math.rnd(7.25)<br></div>',
-
-	'<div><h3>7.How do you find the number with the highest value of x and y?</h3><input type="radio" name="q7" value="a" id="q7a"> ceil(x,y)<br><input type="radio" name="q7" value="b" id="q7b"> Math.ceil(x,y)<br>	<input type="radio" name="q7" value="c" id="q7c"> top(x,y)<br><input type="radio" name="q7" value="d" id="q7d"> Math.max(x,y)<br></div>',
-	'<div><h3>8.Which event occurs when the user clicks on an HTML element? </h3>	<input type="radio" name="q8" value="a" id="q8a"> onclick<br>	<input type="radio" name="q8" value="b" id="q8b"> onchange<br>	<input type="radio" name="q8" value="c" id="q8c"> onmouseover<br>	<input type="radio" name="q8" value="d" id="q8d"> onmouseclick<br></div>',
-	
-	'<div><h3>9. Which operator is used to assign a value to a variable?</h3>	<input type="radio" name="q9" value="a" id="q9a"> X <br>	<input type="radio" name="q9" value="b" id="q9b"> * <br>	<input type="radio" name="q9" value="c" id="q9c"> = <br>	<input type="radio" name="q9" value="d" id="q9d"> - <br></div>',
-	'<div><h3>10. What will the following code return: Boolean(10 > 9)</h3><input type="radio" name="q10" value="a" id="q10a"> NaN<br><input type="radio" name="q10" value="b" id="q10b"> true<br><input type="radio" name="q10" value="c" id="q10c"> false<br><input type="radio" name="q10" value="d" id="q10d"> null<br></div>',
+	'<div><h3> Which is the correct way to write a JavaScript array?</h3><input type="radio" name="q1" value="a" id="q1a"> var txt = new Array(1:"arr",2:"kim",3:"jim");<br><input type="radio" name="q1" value="b" id="q1b"> var txt = new Array("arr ","kim","jim");<br><input type="radio" name="q1" value="c" id="q1c">  var txt = new Array:1=(" arr ")2=("kim")3=("jim");<br><input type="radio" name="q1" value="d" id="q1d"> var txt = new Array=" arr ","kim","jim";<br></div>',
+	'<div><h3>Which of the following is correct to write “Hello World” on the web page? </h3><input type="radio" name="q2" value="a" id="q2a"> System.out.println(“Hello World”)<br><input type="radio" name="q2" value="b" id="q2b"> document.write(“Hello World”) <br><input type="radio" name="q2" value="c" id="q2c"> print(“Hello World”);<br><input type="radio" name="q2" value="d" id="q2d">   response.write(“Hello World”);<br></div>',
+	'<div><h3>How would you write "Hello" in an alert box?</h3><input type="radio" name="q3" value="a" id="q3a"> msg("Hello");<br><input type="radio" name="q3" value="b" id="q3b"> alertbox("Hello");<br><input type="radio" name="q3" value="c" id="q3c"> print("Hello");<br>	<input type="radio" name="q3" value="d" id="q3d"> alert("Hello");<br></div>',
+    '<div><h3> A variable in javascript must start with which spcial character?</h3><input type="radio" name="q4" value="a" id="q4a"> @<br><input type="radio" name="q4" value="b" id="q4b"> $<br>	<input type="radio" name="q4" value="c" id="q4c"> #<br><input type="radio" name="q4" value="d" id="q4d"> No special character<br></div>',
+	'<div><h3> Which of the following method is used to evaluate a string of Java Script code in the context of the specified object? </h3><input type="radio" name="q5" value="a" id="q1a"> Eval<br><input type="radio" name="q5" value="b" id="q5b"> ParseDoule<br><input type="radio" name="q5" value="c" id="q5c"> ParseObject<br><input type="radio" name="q5" value="d" id="q5d">  Efloat<br></div>',
+	'<div><h3>How do you round the number 7.25, to the nearest integer?</h3><input type="radio" name="q6" value="a" id="q6a"> rnd(7.25)<br><input type="radio" name="q6" value="b" id="q6b"> Math.round(7.25)<br><input type="radio" name="q6" value="c" id="q6c"> round(7.25)<br><input type="radio" name="q6" value="d" id="q6d"> Math.rnd(7.25)<br></div>',
+    '<div><h3>How do you find the number with the highest value of x and y?</h3><input type="radio" name="q7" value="a" id="q7a"> ceil(x,y)<br><input type="radio" name="q7" value="b" id="q7b"> Math.ceil(x,y)<br>	<input type="radio" name="q7" value="c" id="q7c"> top(x,y)<br><input type="radio" name="q7" value="d" id="q7d"> Math.max(x,y)<br></div>',
+	'<div><h3>Which event occurs when the user clicks on an HTML element? </h3>	<input type="radio" name="q8" value="a" id="q8a"> onclick<br>	<input type="radio" name="q8" value="b" id="q8b"> onchange<br>	<input type="radio" name="q8" value="c" id="q8c"> onmouseover<br>	<input type="radio" name="q8" value="d" id="q8d"> onmouseclick<br></div>',
+    '<div><h3> Which operator is used to assign a value to a variable?</h3>	<input type="radio" name="q9" value="a" id="q9a"> X <br>	<input type="radio" name="q9" value="b" id="q9b"> * <br>	<input type="radio" name="q9" value="c" id="q9c"> = <br>	<input type="radio" name="q9" value="d" id="q9d"> - <br></div>',
+	'<div><h3> What will the following code return: Boolean(10 > 9)</h3><input type="radio" name="q10" value="a" id="q10a"> NaN<br><input type="radio" name="q10" value="b" id="q10b"> true<br><input type="radio" name="q10" value="c" id="q10c"> false<br><input type="radio" name="q10" value="d" id="q10d"> null<br></div>',
     ]
     
    
@@ -39,7 +36,7 @@ function randomInRange() {
 randomInRange();
 
 function shuffle(arr){
-    var ctr = arr.length,temp,index;
+    var ctr = arr.length-1,temp ,index;
     while(ctr > 0){
         index = Math.ceil(Math.random() * ctr);
         ctr--;
@@ -49,10 +46,10 @@ function shuffle(arr){
     }
     return arr;
 }
-
+var score;
 function submitAnswers(){
     var total = 10;
-    var score = 0;
+    score = 0;
 
     //Get User Input
     var q1 = document.forms["quizForm"]["q1"].value;
@@ -87,7 +84,7 @@ function submitAnswers(){
             x++;
         }
     }
-
+    addScore()
     //Display Results
     var results = document.getElementById('results');
     results.innerHTML = '<h3>Result: You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
@@ -100,6 +97,23 @@ function submitAnswers(){
         noAnswer.setAttribute('style','display:none');
     }
     return false;
+
+
+    
     
     }
 
+    allUsers = JSON.parse(localStorage.getItem('userScore'));
+    var currentUser = allUsers[allUsers.length -1];
+    
+    var ccc= currentUser.name;
+    
+    function addScore(){
+        currentUser.scoreForJs = score;
+
+        var TotalScore = currentUser.scoreForHtml + currentUser.scoreForCss + currentUser.scoreForJs;
+        currentUser.TotalAllScore = TotalScore;
+        
+        localStorage.setItem('userScore',JSON.stringify(allUsers));
+        console.log(allUsers);
+    }
