@@ -3,27 +3,14 @@
 
 var userName;
 var allUsers =[];
-function Leader(name, scoreForHtml, scoreForCss , scoreForJs ) {
+function Leader(name, scoreForHtml, scoreForCss , scoreForJs , TotalAllScore) {
     this.name = name;
     this.scoreForHtml = scoreForHtml;
     this.scoreForCss = scoreForCss;
-    this.scoreForJs = scoreForJs;  
-    
-    // this.getName = function() {
-    //     var x = document.getElementById('name').value;
-    //     return x;
-    //   };
-
-    // this.pushToLocal = function() {
-    //     localStorage.setItem('userScore',JSON.stringify(leaders));
-    //   };
-
-   Leader.all.push(this);
+    this.scoreForJs = scoreForJs; 
+    this.TotalAllScore = TotalAllScore;   
    };
-   Leader.all = [];
 
-//    var user = new Leader();
-//    user.pullFromLocal();
 
 var userInput = document.getElementById('userName');
  userInput.addEventListener('click', usersName );
@@ -34,9 +21,6 @@ function usersName(e) {
     showUserName()
 }
 
-// function NameConstructor(name){
-//     this.newName = [name];
-// }
 
 function showUserName() {
     var inputDiv = document.getElementById('input-name');
@@ -44,13 +28,6 @@ function showUserName() {
 
     
 
-    newObject(userName);
-    // Leader.all.push(user);
-
-    // Leader.user(userName);
-
-
-    localStorage.setItem('userScore',JSON.stringify(allUsers));
   
     if(isNaN(userName)){
       var welcomeDiv = document.getElementById('welcome-message');
@@ -59,21 +36,25 @@ function showUserName() {
       welcomeDiv.setAttribute('style','display:block');
       inputDiv.setAttribute('style','display:none');
       exsamDiv.setAttribute('style','display:block');
+      newObject(userName);
+      localStorage.setItem('userScore',JSON.stringify(allUsers));
     }else{
-      // alert("Thank you for trying to take our exam.\nPlease enter a valid name.");
+     
       var warning = document.getElementById('warning-message');
       warning.setAttribute('style', 'display:block');
     }
+
   }
 
 
-function newObject(name, scoreForHtml, scoreForCss , scoreForJs) {
+function newObject(name) {
     var user = new Leader(name);
     var users = localStorage.getItem('userScore');
     if(users){
-        allUsers = JSON.parse(users);        
+        allUsers = JSON.parse(users); 
     }
     allUsers.push(user);
+       
 }
 
 
