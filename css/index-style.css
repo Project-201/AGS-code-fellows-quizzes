@@ -7,10 +7,17 @@
   clear: both;
 }
 body{
-	background: #DC8665;
+	/* background: #DC8665; */
 	color: #534666;
 	font-family: 'Lato', sans-serif;
   font-size: 18px;
+
+  background-color: #4e54c8;
+	background: linear-gradient(to left,#4e54c8, #4e54c8);
+	width: 100%;
+	/* height: 100vh; */
+
+
 }
 main{  
   min-height: 1000px;
@@ -21,6 +28,8 @@ main{
 	background: #fff ;
 	margin: 20px auto;
   box-shadow: -1px -1px 10px 2px #fff;
+  position: relative;
+  z-index: 3;
 }
 a{
   text-decoration: none;
@@ -140,5 +149,129 @@ footer{
 
 
 
+/**************************************************/
 
+/* body{
+	background-color: #4e54c8;
+	background: linear-gradient(to left, black, #4e54c8);
+	width: 100%;
+	height: 100vh;
+} */
+
+.circles-container{
+	width: 100%;
+	height: 200%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.circle{
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background-color:rgba(255,255,255,0.5);
+	animation-name: float;
+	animation-duration:10s;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	bottom: 0px;
+}
+
+.circle:first-child{
+	left: 25%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0;
+}
+
+.circle:nth-child(2){
+	left: 10%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 12s;
+	animation-duration: 10s;
+}
+
+.circle:nth-child(3){
+	left: 70%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 4s;
+}
+
+.circle:nth-child(4){
+	left: 5%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 20s;
+}
+
+.circle:nth-child(5){
+	left: 0%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 0s;
+	animation-duration: 10s;
+}
+
+.circle:nth-child(6){
+	left: 45%;
+	width: 70px;
+	height: 70px;
+	animation-delay: 10s;
+}
+
+.circle:nth-child(7){
+	left: 35%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 7s;
+	animation-duration: 9s;
+}
+
+.circle:nth-child(8){
+	left: 65%;
+	width: 25px;
+	height: 25px;
+	animation-delay: 7s;
+}
+
+.circle:nth-child(9){
+	left: 75%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 2s;
+}
+
+.circle:nth-child(10){
+	left: 90%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 0s;
+	animation-duration: 11s;
+}
+
+
+
+
+
+@keyframes float{
+	0%{
+		transform: translateY(0) rotate(0deg);
+		opacity: 0.8;
+		border-radius: 0;
+	}
+
+	100%{
+		transform: translateY(-1000px) rotate(720deg);
+		opacity: 0;
+		border-radius: 50%;
+	}
+}
 
