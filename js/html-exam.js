@@ -75,8 +75,7 @@ function submitAnswers(){
     for(var i=0;i<10;i++){
         if(eval('q'+(i+1)) == answers[i]){
             score++;
-            x++;
-            
+            x++;            
             // submit.removeEventListener('submit',noAnswerMes);
         }
     }

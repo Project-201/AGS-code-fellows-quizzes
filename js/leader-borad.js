@@ -5,20 +5,22 @@ tableSection.appendChild(table);
 var tr = document.createElement('tr');
 table.appendChild(tr);
 
-// tr.setAttribute('class','first-rank');
+// tr.classList.add("first-rank");
+// tr.className = 'first-rank';
 
 var td = document.createElement('td');
-table.appendChild(td);
-td.textContent = 'RANK';
+tr.appendChild(td);
+td.textContent = 'Rank';
 
 var td = document.createElement('td');
-table.appendChild(td);
-td.textContent = 'DEVELOPER NAME';
+tr.appendChild(td);
+td.textContent = 'Developer Name';
 
 var td = document.createElement('td');
-table.appendChild(td);
-td.textContent = 'REFERRALS';
+tr.appendChild(td);
+td.textContent = 'Score / 30';
 
+tr.setAttribute('class','first-rank');
 
 function render(){
 
