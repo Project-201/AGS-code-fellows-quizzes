@@ -20,7 +20,7 @@ body{
 
 }
 main{  
-  min-height: 1000px;
+  /* min-height: 1000px; */
 }
 #container{
   width: 60%;
@@ -82,7 +82,7 @@ section span#warnning-message{
   left: 51%;
   right: 51%;
   bottom: 0;
-  background:#DC8665;
+  background:#4E54C8;
   height: 4px;
   transition-property: left, right;
   transition-duration: 0.3s;
@@ -131,17 +131,24 @@ section img{
   /* border: 1px solid black; */
   display: block;
 }
-#input-name, #welcome-message{
+#input-name, #warning-message, #welcome-message{
   width: 80%;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
 }
-#welcome-message{
-  /* display: none; */
-  font-size: 28px;
-  font-weight: bolder;
+#warning-message{
+  display: none;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
 }
+#welcome-message{
+	display: none;
+	color: blue;
+	font-size: 20px;
+	font-weight: bold;
+  }
 #exams{
   display: none;
 }
@@ -217,7 +224,7 @@ footer{
 	animation-direction: alternate;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	bottom: 0px;
+	bottom: -150px;
 }
 
 .circle:first-child{
@@ -294,7 +301,81 @@ footer{
 	animation-delay: 0s;
 	animation-duration: 11s;
 }
+/*****************************************************************/
+.circle:nth-child(11){
+	left: 35%;
+	width: 70px;
+	height: 70px;
+	animation-delay: 11s;
+}
 
+.circle:nth-child(12){
+	left: 20%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 14s;
+	animation-duration: 8s;
+}
+
+.circle:nth-child(13){
+	left: 70%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 4s;
+}
+
+.circle:nth-child(14){
+	left: 5%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 20s;
+}
+
+.circle:nth-child(15){
+	left: 0%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 0s;
+	animation-duration: 10s;
+}
+
+.circle:nth-child(16){
+	left: 45%;
+	width: 70px;
+	height: 70px;
+	animation-delay: 10s;
+}
+
+.circle:nth-child(17){
+	left: 35%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 7s;
+	animation-duration: 9s;
+}
+
+.circle:nth-child(18){
+	left: 65%;
+	width: 25px;
+	height: 25px;
+	animation-delay: 7s;
+}
+
+.circle:nth-child(19){
+	left: 75%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 2s;
+}
+
+.circle:nth-child(20){
+	left: 90%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 0s;
+	animation-duration: 11s;
+}
 
 
 

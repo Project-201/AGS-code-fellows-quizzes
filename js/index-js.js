@@ -19,9 +19,10 @@ function showUserName() {
     welcomeDiv.setAttribute('style','display:block');
     inputDiv.setAttribute('style','display:none');
     exsamDiv.setAttribute('style','display:block');
+    // warning.setAttribute('style', 'diplay:none');
   }else{
     // alert("Thank you for trying to take our exam.\nPlease enter a valid name.");
-    var warning = document.getElementById('warnning-message');
-    warning.setAttribute('style', 'diplay:block');
+    var warning = document.getElementById('warning-message');
+    warning.setAttribute('style', 'display:block');
   }
 }
