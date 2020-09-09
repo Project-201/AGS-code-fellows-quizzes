@@ -1,59 +1,40 @@
-
 'use strict';
 
 var userName;
 var allUsers =[];
-function Leader(name, scoreForHtml, scoreForCss , scoreForJs , TotalAllScore) {
+function Leader(name, htmlScore, cssScore , jsScore , totalScore) {
     this.name = name;
-    this.scoreForHtml = scoreForHtml;
-    this.scoreForCss = scoreForCss;
-    this.scoreForJs = scoreForJs; 
-    this.TotalAllScore = TotalAllScore;   
-   };
-
+    this.htmlScore = htmlScore;
+    this.cssScore = cssScore;
+    this.jsScore = jsScore; 
+    this.totalScore = totalScore;   
+};
 
 var userInput = document.getElementById('userName');
- userInput.addEventListener('click', usersName );
+if(userInput) userInput.addEventListener('click', showUserName );
 
-function usersName(e) {
-    e.preventDefault();
-
-    showUserName()
-}
-
-
-function showUserName() {
-    var inputDiv = document.getElementById('input-name');
-    userName = document.getElementById('name').value;
-
-    
-
-  
-    if(isNaN(userName)){
-      var welcomeDiv = document.getElementById('welcome-message');
-      var exsamDiv = document.getElementById('exams');
-      welcomeDiv.textContent = 'Welcome ' + userName + ', Wish you best of luck in your test.';
-      welcomeDiv.setAttribute('style','display:block');
-      inputDiv.setAttribute('style','display:none');
-      exsamDiv.setAttribute('style','display:block');
-      newObject(userName,0,0,0);
-      localStorage.setItem('userScore',JSON.stringify(allUsers));
-    }else{
-     
-      var warning = document.getElementById('warning-message');
-      warning.setAttribute('style', 'display:block');
-    }
-
+function showUserName(e) {
+  e.preventDefault();
+  var inputDiv = document.getElementById('input-name');
+  userName = document.getElementById('name').value;
+  if(isNaN(userName)){
+    var welcomeDiv = document.getElementById('welcome-message');
+    var exsamDiv = document.getElementById('exams');
+    welcomeDiv.textContent = 'Welcome ' + userName + ', Wish you best of luck in your test.';
+    welcomeDiv.setAttribute('style','display:block');
+    inputDiv.setAttribute('style','display:none');
+    exsamDiv.setAttribute('style','display:block');
+    newObject(userName,0,0,0);
+    localStorage.setItem('userScore',JSON.stringify(allUsers));
+  }else{     
+    var warning = document.getElementById('warning-message');
+    warning.setAttribute('style', 'display:block');
   }
-
-
-function newObject(name, scoreForHtml, scoreForCss , scoreForJs , TotalAllScore) {
-    var user = new Leader(name, scoreForHtml, scoreForCss , scoreForJs , TotalAllScore);
-    var users = localStorage.getItem('userScore');
-    if(users){
-        allUsers = JSON.parse(users); 
-    }
-    allUsers.push(user);
-       
 }
 
+function newObject(name, htmlScore, cssScore , jsScore , totalScore) {
+  var user = new Leader(name, htmlScore, cssScore , jsScore , totalScore);
+  var storedUsers = localStorage.getItem('userScore');
+  if(storedUsers) allUsers = JSON.parse(storedUsers); 
+  allUsers.push(user);       
+}

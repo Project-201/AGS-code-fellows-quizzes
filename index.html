@@ -1,87 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Code Fellows Exam</title>
-  <link rel="stylesheet" href="css/index-style.css">
-</head>
-<body>
-        <ul class="circles-container">
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-        </ul>
-
-
-
-  <div id="container">
-    <header >
+  <head>
+    <title>Code Fellows Exam</title>
+    <link rel="stylesheet" href="css/index-style.css">
+  </head>
+  <body>
+    <div id="container">
+      <header >
         <div>
           <img src="https://image4.owler.com/logo/code-fellows_owler_20160309_233545_large.png" alt="code fellows logo">
         </div>
         <nav>
-            <a class="hvr-overline-from-center" href="index.html">Home</a>
-            <a class="hvr-overline-from-center" href="leader-board.html">leaderboard</a>
-            <a class="hvr-overline-from-center" href="about.html">about us</a>
+          <a class="hvr-overline-from-center" href="index.html">Home</a>
+          <a class="hvr-overline-from-center" href="leader-board.html">leaderboard</a>
+          <a class="hvr-overline-from-center" href="about.html">about us</a>
         </nav>
-    </header>
-    <hr>
-    <div class="clear"></div>
-    
-    <main>
-      <h1>Front-End Online Test</h1>
-      <article>
-        <p>
-          The main aim of our website is to test your skills in front-end langauges.<br><br>
-          The HTML, CSS and JavaScript online test assesses candidates knowledge of HTML, CSS, and JavaScript as well as their ability to utilize JavaScript to manipulate Document Object Model built from HTML and CSS.<br><br>
-          It's an ideal test for pre-employment screening. A good front-end developer should be able to utilize all these technologies to create a modern, dynamic, and interactive user interface.<br><br>
-          This online test requires candidates to solve common HTML/CSS questions as well as JavaScript problems.
-        </p>
-      </article>
-
-      <!-- start input user  -->
-      <section id="input-name">
-        <aside id="warning-message">Thank you for trying to take our exam.<br>Please enter a valid name.</aside>
-        <label>Enter you name here:</label>
-        <input type="text" id='name'>
-        <button id="userName">Open Exams</button>
-      </section>
-      <!-- end input user  -->
-      <section id="welcome-message"></section>
-      <section id="exams">
-        <!-- <div> -->
-
+      </header>
+      <hr>
+      <div class="clear"></div>    
+      <main>
+        <h1>Front-End Online Test</h1>
+        <article>
+          <p>
+            The main aim of our website is to test your skills in front-end langauges.<br><br>
+            The HTML, CSS and JavaScript online test assesses candidates knowledge of HTML, CSS, and JavaScript as well as their ability to utilize JavaScript to manipulate Document Object Model built from HTML and CSS.<br><br>
+            It's an ideal test for pre-employment screening. A good front-end developer should be able to utilize all these technologies to create a modern, dynamic, and interactive user interface.<br><br>
+            This online test requires candidates to solve common HTML/CSS questions as well as JavaScript problems.
+          </p>
+        </article>
+        <!-- start input user  -->
+        <section id="input-name">
+          <aside id="warning-message">Thank you for trying to take our exam.<br>Please enter a valid name.</aside>
+          <label>Enter you name here:</label>
+          <input type="text" id='name'>
+          <button id="userName">Open Exams</button>
+        </section>
+        <!-- end input user  -->
+        <section id="welcome-message"></section>
+        <section id="exams">
           <p>Test your skills here:</p>
           <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML logo">
-            <button class="hvr-grow-shadow"><a href="html-exam.html">HTML TEST</a></button>
+            <img src="https://www.iconfinder.com/data/icons/social-icon-3/512/social_style_3_html5-512.png" alt="HTML logo">
+            <button class="hvr-grow-shadow" id='html'><a href="html-exam.html">HTML TEST</a></button>
           </div>
           <div>
-            <img src="https://www.closetag.com/uploads/services/1549279599.png" alt="CSS logo">
-            <button class="hvr-grow-shadow"><a href="css-exam.html">CSS TEST</a></button>
+            <img src="https://www.iconfinder.com/data/icons/social-icon-3/512/social_style_3_css3-512.png" alt="CSS logo">
+            <button class="hvr-grow-shadow" id='css'><a href="css-exam.html">CSS TEST</a></button>
           </div>
           <div>
-            <img src="https://www.brandlabs.us/wp-content/uploads/2016/10/logo-expert-javascript.png" alt="Javascript logo">
-            <button class="hvr-grow-shadow"><a href="js-exam.html">JavaScript TEST</a></button>
-          </div>
-       
-      </section>
-    </main>
+            <img src="https://www.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-512.png" alt="Javascript logo">
+            <button class="hvr-grow-shadow" id='js'><a href="js-exam.html">JavaScript TEST</a></button>
+          </div>       
+        </section>
+      </main>
     <footer>
         Copyright © 2019, All Rights Reserved<br>
         This website was made by:<br>
         <a href="https://github.com/Ahmad-Sawalqeh">Ahmad Sawalqeh</a><br>
         <a href="https://github.com/Goorob">Goroob Sawalqeh</a><br>
         <a href="https://github.com/Shaimaaaljfoot1994">Shaimaa Jfoot</a>
-    </footer>
-  </div>
-  <!-- <script src="js/index-js.js"></script> -->
-  <script src="js/app.js"></script>
-</body>
+      </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>

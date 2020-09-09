@@ -1,67 +1,38 @@
-
- 
 <!DOCTYPE html>
 <html>
-<head>
-	<title> Javascript Quiz</title>
-	<link rel="stylesheet" type="text/css" href="css/exams-style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
-</head>
-<body>
-		<ul class="circles-container">
-				<li class="circle"></li>
-				<li class="circle"></li>
-				<li class="circle"></li>
-				<li class="circle"></li>
-				<li class="circle"></li>
-				<li class="circle"></li>
-				<li class="circle"></li>
-				<li class="circle"></li>
-				<li class="circle"></li>
-				<li class="circle"></li>
-			</ul>
+	<head>
+		<title>Javascript Quiz</title>
+		<link rel="stylesheet" type="text/css" href="css/exams-style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+	</head>
+	<body>
+		
+		<div id="container">
+			<header>
+				<img src="https://image4.owler.com/logo/code-fellows_owler_20160309_233545_large.png" alt="code fellows logo">
+				<h1>Javascript Quiz</h1>
+				<p>Test your knowledge in <strong>javascript fundamentals</strong></p>
+			</header>
+			<section>
+				<form name="quizForm" >
+					<section id="form"></section>	
+					<br><br>
+					<input type="submit" value="Submit Answers" id="submit-exam">
+					<button id="next-exam"><a href="leader-board.html">leader board</a></button>
+				</form>
+				<p id="no-answers">You still didn't answer all the qustions.</p>
+				<div id="results"></div>
+			</section>
+			<footer>
+				Copyright © 2019, All Rights Reserved<br>
+				This website was made by:<br>
+				<a href="https://github.com/Ahmad-Sawalqeh">Ahmad Sawalqeh</a><br>
+				<a href="https://github.com/Goorob">Goroob Sawalqeh</a><br>
+				<a href="https://github.com/Shaimaaaljfoot1994">Shaimaa Jfoot</a>
+			</footer>
+		</div>
 
-	<div id="container">
-			
-					
-		<header>
-				<img src="https://image4.owler.com/logo/code-fellows_owler_20160309_233545_large.png
-				" alt="code fellows logo">
-			<h1> Javascript Quiz</h1>
-			<p>Test your knowledge in <strong>javascript fundamentals</strong></p>
-		</header>
-		<section>
-
-			<form name="quizForm" >
-				<section id="form">
-			
-			</section>	
-			<br><br>
-				<input type="submit" value="Submit Answers" id="submit-exam">
-				<button id="next-exam"><a href="leader-board.html">leader board</a></button>
-
-
-			</form>
-				<p id="no-answers">
-					You still didn't answer all the qustions.
-				</p>
-			<div id="results"></div>
-
-		</section>
-		<!-- <footer>
-			<p>Copyright &copy; 2019, All Rights Reserved</p>
-		</footer> -->
-		<footer>
-        Copyright © 2019, All Rights Reserved<br>
-        This website was made by:<br>
-        <a href="https://github.com/Ahmad-Sawalqeh">Ahmad Sawalqeh</a><br>
-        <a href="https://github.com/Goorob">Goroob Sawalqeh</a><br>
-        <a href="https://github.com/Shaimaaaljfoot1994">Shaimaa Jfoot</a>
-    </footer>
-
-	</div>
-	<script src="js/app.js"></script>
-	<script type="text/javascript" src="js/js-exam.js"></script>
-
-</body>
+		<script src="js/app.js"></script>
+		<script type="text/javascript" src="js/js-exam.js"></script>
+	</body>
 </html>

@@ -4,66 +4,61 @@
 	box-sizing: border-box;
 }
 .clear{
-  clear: both;
+	clear: both;
 }
+
 body{
-	/* background: #DC8665; */
 	color: #534666;
 	font-family: 'Lato', sans-serif;
-  font-size: 18px;
-
-  background-color: #4e54c8;
-	background: linear-gradient(to left,#4e54c8, #4e54c8);
+	font-size: 18px;
+	background-color: #4e54c8;
+	background: linear-gradient(to top, black, #4e54c8);
 	width: 100%;
-	/* height: 100vh; */
-
-
+	height: auto;
 }
-main{  
-  /* min-height: 1000px; */
-}
+
 #container{
-  width: 60%;
-  border-radius: 10px;
+	width: 60%;
+	border-radius: 10px;
 	background: #fff ;
 	margin: 20px auto;
-  box-shadow: -1px -1px 10px 2px #fff;
-  position: relative;
-  z-index: 3;
+	box-shadow: -1px -1px 10px 2px #fff;
+	position: relative;
+	z-index: 3;	
+	min-height: 100vh;
 }
 a{
-  text-decoration: none;
+	text-decoration: none;
 }
 header{  
 	font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
-  min-height: 100px;
-  line-height: 100px;
+	font-size: 17px;
+	min-height: 100px;
+	line-height: 100px;
 }
 header a, footer a {
-  margin: 0 25px;
-  padding: 10px;
-  color: black;
+	margin: 0 25px;
+	padding: 10px;
+	color: black;
 }
 
 label{
-  font-size: 25px;
-  font-weight: bold;
-  display: block;
+	font-size: 25px;
+	font-weight: bold;
+	display: block;
 }
 #name{
-  padding:10px;
-  font-size: 20px;
-
+	padding:10px;
+	font-size: 20px;
 }
 #userName{
-  cursor: pointer;
+	cursor: pointer;
 }
 section span#warnning-message{
-  color: red;
-  font-weight: bold;
-  font-size: 20px;
-  display: none;
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+	display: none;
 }
 
 
@@ -72,325 +67,119 @@ section span#warnning-message{
 
 /* http://ianlunn.github.io/Hover/ */
 .hvr-overline-from-center {
-  transform: perspective(1px) translateZ(0);
-  position: relative;
+	transform: perspective(1px) translateZ(0);
+	position: relative;
 }
 .hvr-overline-from-center:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 51%;
-  right: 51%;
-  bottom: 0;
-  background:#4E54C8;
-  height: 4px;
-  transition-property: left, right;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 51%;
+	right: 51%;
+	bottom: 0;
+	background:#4E54C8;
+	height: 4px;
+	transition-property: left, right;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
 }
 .hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
-  left: 0;
-  right: 0;
+	left: 0;
+	right: 0;
 }
 
 
 hr{
-  width: 90%;
-  border: 2px solid black;
-  margin: 0 auto;
+	width: 90%;
+	border: 2px solid black;
+	margin: 0 auto;
 }
 
 header div{
-  float: left;
-  margin:15px 0 0 15px;
-  height: 80px;
+	float: left;
+	margin:15px 0 0 15px;
+	height: 80px;
 }
 header nav{
-  float: right;
+	float: right;
 }
 h1{
-  padding: 40px 0;
-  text-align: center;
-  font-weight: bolder;
+	padding: 40px 0;
+	text-align: center;
+	font-weight: bolder;
 }
 p{
-  padding:20px;
-  font-size: 20px;
-  text-align: justify;
-  margin:0 30px;
+	padding:20px;
+	font-size: 20px;
+	text-align: justify;
+	margin:0 30px;
 }
 section div{
-  margin:25px;
-  display: inline-block;
-  text-align: center;
-  /* border: 1px solid black; */
+	margin:25px;
+	display: inline-block;
+	text-align: center;
+}
+#exams{
+	text-align: center;
+
 }
 section img{
-  width: 200px;
-  /* margin-bottom : 20px; */
-  /* border: 1px solid black; */
-  display: block;
+	width: 250px;
+	display: block;
 }
 #input-name, #warning-message, #welcome-message{
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 30px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px;
 }
 #warning-message{
-  display: none;
-  color: red;
-  font-size: 20px;
-  font-weight: bold;
+	display: none;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
 }
 #welcome-message{
 	display: none;
 	color: blue;
 	font-size: 20px;
 	font-weight: bold;
-  }
+}
 #exams{
-  display: none;
+	display: none;
 }
 button{
-  border:0;
-  padding: 15px;
-  border-radius: 5px;
-  margin: 20px;
+	border:0;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 20px;
 }
 button a{
-  color: #DC8665;
-  font-size: 18px;
-  padding: 15px;
-  font-weight: bold;
+	color: #DC8665;
+	font-size: 18px;
+	padding: 15px;
+	font-weight: bold;
 }
 
 /* Grow Shadow */
 .hvr-grow-shadow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
 }
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+	box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
-
-
-
-
 footer{
-  text-align: center;
-  padding:35px;
-}
-
-
-
-
-/**************************************************/
-
-/* body{
-	background-color: #4e54c8;
-	background: linear-gradient(to left, black, #4e54c8);
-	width: 100%;
-	height: 100vh;
-} */
-
-.circles-container{
-	width: 100%;
-	height: 200%;
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-}
-
-.circle{
-	position: absolute;
-	display: block;
-	list-style: none;
-	width: 20px;
-	height: 20px;
-	background-color:rgba(255,255,255,0.5);
-	animation-name: float;
-	animation-duration:10s;
-	animation-direction: alternate;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	bottom: -150px;
-}
-
-.circle:first-child{
-	left: 25%;
-	width: 80px;
-	height: 80px;
-	animation-delay: 0;
-}
-
-.circle:nth-child(2){
-	left: 10%;
-	width: 20px;
-	height: 20px;
-	animation-delay: 12s;
-	animation-duration: 10s;
-}
-
-.circle:nth-child(3){
-	left: 70%;
-	width: 40px;
-	height: 40px;
-	animation-delay: 4s;
-}
-
-.circle:nth-child(4){
-	left: 5%;
-	width: 60px;
-	height: 60px;
-	animation-delay: 0s;
-	animation-duration: 20s;
-}
-
-.circle:nth-child(5){
-	left: 0%;
-	width: 20px;
-	height: 20px;
-	animation-delay: 0s;
-	animation-duration: 10s;
-}
-
-.circle:nth-child(6){
-	left: 45%;
-	width: 70px;
-	height: 70px;
-	animation-delay: 10s;
-}
-
-.circle:nth-child(7){
-	left: 35%;
-	width: 50px;
-	height: 50px;
-	animation-delay: 7s;
-	animation-duration: 9s;
-}
-
-.circle:nth-child(8){
-	left: 65%;
-	width: 25px;
-	height: 25px;
-	animation-delay: 7s;
-}
-
-.circle:nth-child(9){
-	left: 75%;
-	width: 80px;
-	height: 80px;
-	animation-delay: 2s;
-}
-
-.circle:nth-child(10){
-	left: 90%;
-	width: 30px;
-	height: 30px;
-	animation-delay: 0s;
-	animation-duration: 11s;
-}
-/*****************************************************************/
-.circle:nth-child(11){
-	left: 35%;
-	width: 70px;
-	height: 70px;
-	animation-delay: 11s;
-}
-
-.circle:nth-child(12){
-	left: 20%;
-	width: 30px;
-	height: 30px;
-	animation-delay: 14s;
-	animation-duration: 8s;
-}
-
-.circle:nth-child(13){
-	left: 70%;
-	width: 40px;
-	height: 40px;
-	animation-delay: 4s;
-}
-
-.circle:nth-child(14){
-	left: 5%;
-	width: 60px;
-	height: 60px;
-	animation-delay: 0s;
-	animation-duration: 20s;
-}
-
-.circle:nth-child(15){
-	left: 0%;
-	width: 20px;
-	height: 20px;
-	animation-delay: 0s;
-	animation-duration: 10s;
-}
-
-.circle:nth-child(16){
-	left: 45%;
-	width: 70px;
-	height: 70px;
-	animation-delay: 10s;
-}
-
-.circle:nth-child(17){
-	left: 35%;
-	width: 50px;
-	height: 50px;
-	animation-delay: 7s;
-	animation-duration: 9s;
-}
-
-.circle:nth-child(18){
-	left: 65%;
-	width: 25px;
-	height: 25px;
-	animation-delay: 7s;
-}
-
-.circle:nth-child(19){
-	left: 75%;
-	width: 80px;
-	height: 80px;
-	animation-delay: 2s;
-}
-
-.circle:nth-child(20){
-	left: 90%;
-	width: 30px;
-	height: 30px;
-	animation-delay: 0s;
-	animation-duration: 11s;
-}
-
-
-
-
-@keyframes float{
-	0%{
-		transform: translateY(0) rotate(0deg);
-		opacity: 0.8;
-		border-radius: 0;
-	}
-
-	100%{
-		transform: translateY(-1000px) rotate(720deg);
-		opacity: 0;
-		border-radius: 50%;
-	}
+	text-align: center;
+	padding:35px;
 }
 
