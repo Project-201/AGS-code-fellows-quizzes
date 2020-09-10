@@ -18,7 +18,7 @@ allUsers= JSON.parse(localStorage.getItem('userScore'));
 var currentUser = allUsers[allUsers.length -1];
 
 
-fetch('./js/questions2.json')
+fetch('./js/questions.json')
     .then((res) => {
         return res.json();
     })

@@ -1,84 +1,158 @@
 {
     "html":[
-        {
-            "question": "Which attribute replaces the name attribute for the following elements: a, applet, frame, iframe, img, and map?",
-            "choice1": "The src attribute",
-            "choice2": "The class attribute",
-            "choice3": "The id attribute",
-            "choice4": "The name attribute",
-            "answer": 2
-        },
-        {
-            "question": "How do you display a border like this: The top border = 10 pixels The bottom border = 5 pixelsThe left border = 20 pixelsThe right border = 1 pixel?",
-            "choice1": "border-width: 10px 1px 5px 20px",
-            "choice2": "border-width: 10px 20px 5px 1px",
-            "choice3": "border-width: 5px 20px 10px 1px",
-            "choice4": "border-width: 5px 20px 10px 1px",
-            "answer": 1
-        },
-        {
-            "question": "The HTML global attribute, 'contenteditable' is used to:",
-            "choice1": "Update content from the srever",
-            "choice2": "Return the position of the first found occurrence of content inside a string",
-            "choice3": "Specify whether the content of an element should be editable or not",
-            "choice4": "Specifies a context menu for an element .The menu appears when a user right-clicks on the element",
-            "answer": 3
-        },
-        {
-            "question": "Increasing the cellpadding value will what?",
-            "choice1": "Increase the softness of your site",
-            "choice2": "Increase the space between cells",
-            "choice3": "Increase the distance between cell and content",
-            "choice4": "Increase the space between cells and elements",
-            "answer": 3
-        },
-        {
-            "question": "In HTML, onblur and onfocus are:",
-            "choice1": "Event attributes",
-            "choice2": "Style attributes",
-            "choice3": "HTML elements",
-            "choice4": "No special character",
-            "answer": 1
-        },
-        {
-            "question": "Graphics defined by SVG is in which format?",
-            "choice1": "HTML",
-            "choice2": "CSS",
-            "choice3": "XML",
-            "choice4": "PHP",
-            "answer": 3
-        },
-        {
-            "question": "How do you display hyperlinks without an underline?",
-            "choice1": "a {underline: none}",
-            "choice2": "a {text-decoration: none}",
-            "choice3": "a {text-decoration: no underline}",
-            "choice4": "a {decoration: no underline}",
-            "answer": 2
-        },
-        {
-            "question": "What does an HTML tag do?",
-            "choice1": "It specifies formatting and layout instructions for your web page",
-            "choice2": "It hides programming instructions from view",
-            "choice3": "It connects your web site to an operating environment",
-            "choice4": "It determines the organizational structure of your Web site",
-            "answer": 4
-        },
-        {
-            "question": "Which HTML element is used to display a scalar measurement within a range?",
-            "choice1": "&lt;measure&gt",
-            "choice2": "&lt;meter&gt",
-            "choice3": "&lt;range&gt",
-            "choice4": "&lt;gauge&gt",
-            "answer": 2
-        },
-        {
-            "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
-            "choice1": "In the < body > section",
-            "choice2": "In the < head > section",
-            "choice3": "At the top of the document",
-            "choice4": "At the end of the document",
-            "answer": 2
-        }
-    ]
+            {
+                "question": "Which attribute replaces the name attribute for the following elements: a, applet, frame, iframe, img, and map?",
+                "options": ["The src attribute","The class attribute","The id attribute","The name attribute"],
+                "answer": "C"
+            },
+            {
+                "question": "How do you display a border like this: The top border = 10 pixels The bottom border = 5 pixelsThe left border = 20 pixelsThe right border = 1 pixel?",
+                "options": ["border-width: 10px 1px 5px 20px","border-width: 10px 20px 5px 1px","border-width: 5px 20px 10px 1px","border-width: 5px 10px 20px 1px"],
+                "answer": "A"
+            },
+            {
+                "question": "The HTML global attribute, 'contenteditable' is used to:",
+                "options": ["Update content from the srever","Return the position of the first found occurrence of content inside a string","Specify whether the content of an element should be editable or not","Specifies a context menu for an element .The menu appears when a user right-clicks on the element"],
+                "answer": "C"
+            },
+            {
+                "question": "Increasing the cellpadding value will what?",
+                "options": ["Increase the softness of your site","Increase the space between cells","Increase the distance between cell and content","Increase the space between cells and elements"],
+                "answer": "C"
+            },
+            {
+                "question": "In HTML, onblur and onfocus are:",
+                "options": ["Event attributes","Style attributes","HTML elements","No special character"],
+                "answer": "A"
+            },
+            {
+                "question": "Graphics defined by SVG is in which format?",
+                "options": ["HTML","CSS","XML","PHP"],
+                "answer": "C"
+            },
+            {
+                "question": "How do you display hyperlinks without an underline?",
+                "options": ["a {underline: none}","a {text-decoration: none}","a {text-decoration: no underline}","a {decoration: no underline}"],
+                "answer": "B"
+            },
+            {
+                "question": "What does an HTML tag do?",
+                "options": ["It specifies formatting and layout instructions for your web page","It hides programming instructions from view","It connects your web site to an operating environment","It determines the organizational structure of your Web site"],
+                "answer": "D"
+            },
+            {
+                "question": "Which HTML element is used to display a scalar measurement within a range?",
+                "options": ["&lt; measure &gt","&lt; meter &gt","&lt; range &gt","&lt; gauge &gt"],
+                "answer": "B"
+            },
+            {
+                "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
+                "options": ["In the < body > section","In the < head > section","At the top of the document","At the end of the document"],
+                "answer": "B"
+            }
+        ],
+    "css":[
+            {
+                "question": "How do you make a list that lists its items with squares?",
+                "options": ["list-style-type: square","list-type: square","list: square","list"],
+                "answer": "A"
+            },
+            {
+                "question": "Which of the following defines 1% of viewport height?",
+                "options": ["px","vmin","vw","vh"],
+                "answer": "D"
+            },
+            {
+                "question": " __________ is a property that allows developers to add rounded corners on the design elements.",
+                "options": ["Round Corner","Box Shadow","Border-Radius","Corner"],
+                "answer": "C"
+            },
+            {
+                "question": "How to rotate objects using CSS3?",
+                "options": ["object-rotation: 30deg","rotate-object: 30deg","transform: rotate-30deg-clockwise","transform: rotate(30deg)"],
+                "answer": "D"
+            },
+            {
+                "question": "How do you insert a comment in a CSS file?",
+                "options": ["//this is a comment","this is a comment","/*this is a comment*/","//this is a comment//"],
+                "answer": "C"
+            },
+            {
+                "question": "Box-Shadow is a property that allows developers to apply a ....",
+                "options": ["Border","Rounded Corner","Drop Shadow","Background"],
+                "answer": "C"
+            },
+            {
+                "question": "What are the first three values of text-shadow in order?",
+                "options": ["vertical, horizontal, blur","blur, vertical, horizontal","horizontal, vertical, blur","vertical, blur, horizontal"],
+                "answer": "C"
+            },
+            {
+                "question": "How to force a word wrap using CSS3?",
+                "options": ["text-wrap: break-word","word-wrap: break-word","text-wrap: force","text-width: set"],
+                "answer": "B"
+            },
+            {
+                "question": "Which of the following selector matches the name of any element type?",
+                "options": ["The Type Selector","The Universal Selector","The Class Selector","The Descendant Selector"],
+                "answer": "B"
+            },
+            {
+                "question": "How to re-size/scale objects using CSS3?",
+                "options": ["scale-object: 2,4","transform: scale(2,4)","scale: (2,4)","transform scale-object: 2,4"],
+                "answer": "B"
+            }
+        ],
+    "js":[
+            {
+                "question": "Which is the correct way to write a JavaScript array?",
+                "options": ["var txt = new Array(1:'arr',2:'kim',3:'jim')","var txt = new Array('arr','kim','jim')","var txt = new Array:1=('arr')2=('kim')3=('jim')","var txt = new Array='arr','kim','jim'"],
+                "answer": "B"
+            },
+            {
+                "question": "Which of the following is correct to write “Hello World” on the web page?",
+                "options": ["System.out.println(“Hello World”)","document.write(“Hello World”)","print(“Hello World”)","response.write(“Hello World”)"],
+                "answer": "B"
+            },
+            {
+                "question": "How would you write 'Hello' in an alert box?",
+                "options": ["msg('Hello')","alertbox('Hello')","print('Hello')","alert('Hello')"],
+                "answer": "D"
+            },
+            {
+                "question": "A variable in javascript must start with which spcial character?",
+                "options": ["@","$","#","No special character"],
+                "answer": "D"
+            },
+            {
+                "question": "Which of the following method is used to evaluate a string of Java Script code in the context of the specified object?",
+                "options": ["Eval","ParseDoule","ParseObject","Efloat"],
+                "answer": "A"
+            },
+            {
+                "question": "How do you round the number 7.25, to the nearest integer?",
+                "options": ["rnd(7.25)","Math.round(7.25)","round(7.25)","Math.rnd(7.25)"],
+                "answer": "B"
+            },
+            {
+                "question": "How do you find the number with the highest value of x and y?",
+                "options": ["ceil(x,y)","Math.ceil(x,y)","top(x,y)","Math.max(x,y)"],
+                "answer": "D"
+            },
+            {
+                "question": "Which event occurs when the user clicks on an HTML element?",
+                "options": ["onclick","onchange","onmouseover","onmouseclick"],
+                "answer": "A"
+            },
+            {
+                "question": "Which operator is used to assign a value to a variable?",
+                "options": ["X","*","=","-"],
+                "answer": "C"
+            },
+            {
+                "question": "What will the following code return: Boolean(10 > 9)?",
+                "options": ["NaN","true","false","null"],
+                "answer": "B"
+            }
+        ]
 }
