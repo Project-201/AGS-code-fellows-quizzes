@@ -1,0 +1,84 @@
+{
+    "html":[
+        {
+            "question": "Which attribute replaces the name attribute for the following elements: a, applet, frame, iframe, img, and map?",
+            "choice1": "The src attribute",
+            "choice2": "The class attribute",
+            "choice3": "The id attribute",
+            "choice4": "The name attribute",
+            "answer": 2
+        },
+        {
+            "question": "How do you display a border like this: The top border = 10 pixels The bottom border = 5 pixelsThe left border = 20 pixelsThe right border = 1 pixel?",
+            "choice1": "border-width: 10px 1px 5px 20px",
+            "choice2": "border-width: 10px 20px 5px 1px",
+            "choice3": "border-width: 5px 20px 10px 1px",
+            "choice4": "border-width: 5px 20px 10px 1px",
+            "answer": 1
+        },
+        {
+            "question": "The HTML global attribute, 'contenteditable' is used to:",
+            "choice1": "Update content from the srever",
+            "choice2": "Return the position of the first found occurrence of content inside a string",
+            "choice3": "Specify whether the content of an element should be editable or not",
+            "choice4": "Specifies a context menu for an element .The menu appears when a user right-clicks on the element",
+            "answer": 3
+        },
+        {
+            "question": "Increasing the cellpadding value will what?",
+            "choice1": "Increase the softness of your site",
+            "choice2": "Increase the space between cells",
+            "choice3": "Increase the distance between cell and content",
+            "choice4": "Increase the space between cells and elements",
+            "answer": 3
+        },
+        {
+            "question": "In HTML, onblur and onfocus are:",
+            "choice1": "Event attributes",
+            "choice2": "Style attributes",
+            "choice3": "HTML elements",
+            "choice4": "No special character",
+            "answer": 1
+        },
+        {
+            "question": "Graphics defined by SVG is in which format?",
+            "choice1": "HTML",
+            "choice2": "CSS",
+            "choice3": "XML",
+            "choice4": "PHP",
+            "answer": 3
+        },
+        {
+            "question": "How do you display hyperlinks without an underline?",
+            "choice1": "a {underline: none}",
+            "choice2": "a {text-decoration: none}",
+            "choice3": "a {text-decoration: no underline}",
+            "choice4": "a {decoration: no underline}",
+            "answer": 2
+        },
+        {
+            "question": "What does an HTML tag do?",
+            "choice1": "It specifies formatting and layout instructions for your web page",
+            "choice2": "It hides programming instructions from view",
+            "choice3": "It connects your web site to an operating environment",
+            "choice4": "It determines the organizational structure of your Web site",
+            "answer": 4
+        },
+        {
+            "question": "Which HTML element is used to display a scalar measurement within a range?",
+            "choice1": "&lt;measure&gt",
+            "choice2": "&lt;meter&gt",
+            "choice3": "&lt;range&gt",
+            "choice4": "&lt;gauge&gt",
+            "answer": 2
+        },
+        {
+            "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
+            "choice1": "In the < body > section",
+            "choice2": "In the < head > section",
+            "choice3": "At the top of the document",
+            "choice4": "At the end of the document",
+            "answer": 2
+        }
+    ]
+}
