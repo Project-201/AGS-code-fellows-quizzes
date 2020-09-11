@@ -75,14 +75,11 @@ function selectOption(e){
 
 function submitAnswers(e){
     e.preventDefault();
+    var noAnswer = document.getElementById("no-answers");
 
     // validation all inputs
     if(userAnswers.some(val => val == null || val == '')){    
-        var noAnswer = document.getElementById("no-answers");
-        noAnswer.setAttribute('style','display:block');
-        setTimeout(() => {
-            noAnswer.setAttribute('style','display:none');
-        }, 3500)
+        noAnswer.setAttribute('style','opacity:1');        
         return;
     }
 
@@ -97,6 +94,7 @@ function submitAnswers(e){
     results.innerHTML = `<h3>Result: You scored&nbsp; <span>${score}</span>&nbsp; out of &nbsp;<span>${total}&nbsp;</span></h3>`;
     var nextExam = document.getElementById("next-exam");
     nextExam.setAttribute('style','display:inline');
+    noAnswer.setAttribute('style','opacity:0');
 
     // add score to local storage
     addScore();

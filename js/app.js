@@ -28,7 +28,7 @@ function showUserName(e) {
     localStorage.setItem('userScore',JSON.stringify(allUsers));
   }else{     
     var warning = document.getElementById('warning-message');
-    warning.setAttribute('style', 'display:block');
+    warning.setAttribute('style', 'opacity:1');
   }
 }
 

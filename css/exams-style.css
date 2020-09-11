@@ -45,8 +45,7 @@
 body{
 	color: #534666;
 	font-family: 'Lato', sans-serif;
-	background-color: #4e54c8;
-	background: linear-gradient(to left, black, #4e54c8);
+	background-color: #ECF5FF;
 }
 a{
 	text-decoration: none;
@@ -54,8 +53,9 @@ a{
 }
 #container{
 	width: 60%;
-	background: #ECF5FF ;
-	margin: 20px auto;
+	border-left: 3px solid #fff;
+	border-right: 3px solid #fff;
+	margin: 0 auto;
 	overflow: auto;
 	padding: 25px;
 	position: relative;
@@ -91,27 +91,33 @@ footer{
 }
 
 input[type='submit']{
-	background-color:  #56a5eb;
+	background-color:  #60aaeb;
 	border: 0;
-	color: rgb(32, 28, 21);
+	color: #222;
 	font-size: 20px;
 	font-weight: bold;
 	border-radius: 5px;
 	padding: 10px 15px;
+	margin: 20px 0;
 	cursor: pointer;
+	transition: .5s;
+}
+
+input[type='submit']:hover{
+	background-color:  #2390f0;	
+	color: rgb(21, 21, 32);
 }
 
 #no-answers{
 	color:red;
-	font-size: 22px;
-	font-weight: bold;
+	font-size: 16px;
 	background-color: none;
-	margin: 0 50px ;
-	display: none;
+	opacity: 0;
+	margin-left: 50px;
 }
 
 #results h3{
-	background: #4e54c8;
+	background: #56a5eb;
 	color: black;
 }
 
@@ -120,26 +126,27 @@ input[type='submit']{
 	font-weight: bold;
 }
 
-input{
-	margin: 10px 10px 10px 50px;
-}
-
 h3{	
-	border-radius: 8px;
-	margin: 10px ;
+	border-radius: 5px;
+	margin: 10px 0;
 	padding: 15px;
 }
 
 button#next-exam{
-	background-color:  #56a5eb;
+	background-color:  #60aaeb;
 	border: 0;
-	color: rgb(32, 28, 21);
+	color: #222;
 	font-size: 20px;
 	font-weight: bold;
 	border-radius: 5px;
 	padding: 10px 15px;
 	cursor: pointer;
-	margin: 0 0 0 300px;
+	float: right;
 	display: none;
+	margin: 20px 0;
+}
 
+button#next-exam:hover{
+	background-color:  #2390f0;	
+	color: rgb(21, 21, 32);
 }

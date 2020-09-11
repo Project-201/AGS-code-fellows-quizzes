@@ -11,22 +11,21 @@ body{
 	color: #534666;
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
-	background-color: #4e54c8;
-	background: linear-gradient(to top, black, #4e54c8);
+	background-color: #ECF5FF;
 	width: 100%;
 	height: auto;
 }
 
 #container{
 	width: 60%;
-	border-radius: 10px;
-	background: #fff ;
-	margin: 20px auto;
-	box-shadow: -1px -1px 10px 2px #fff;
+	border-left: 3px solid #fff;
+	border-right: 3px solid #fff;
+	margin: 0 auto;
 	position: relative;
 	z-index: 3;	
 	min-height: 100vh;
 }
+
 a{
 	text-decoration: none;
 }
@@ -48,11 +47,15 @@ label{
 	display: block;
 }
 #name{
+	width: 50%;
+	margin: 50px 0 0;
 	padding:10px;
 	font-size: 20px;
 }
 #userName{
 	cursor: pointer;
+	background-color: #0f9fffb0;
+	font-size: 18px;
 }
 section span#warnning-message{
 	color: red;
@@ -62,35 +65,8 @@ section span#warnning-message{
 }
 
 
-
-
-
-/* http://ianlunn.github.io/Hover/ */
-.hvr-overline-from-center {
-	transform: perspective(1px) translateZ(0);
-	position: relative;
-}
-.hvr-overline-from-center:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	left: 51%;
-	right: 51%;
-	bottom: 0;
-	background:#4E54C8;
-	height: 4px;
-	transition-property: left, right;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
-}
-.hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
-	left: 0;
-	right: 0;
-}
-
-
 hr{
-	width: 90%;
+	/* width: 100%; */
 	border: 2px solid black;
 	margin: 0 auto;
 }
@@ -125,23 +101,33 @@ section div{
 }
 section img{
 	width: 250px;
+	border-radius: 15px;
 	display: block;
 }
-#input-name, #warning-message, #welcome-message{
-	width: 80%;
-	margin: 0 auto;
+#input-name{
+	text-align: center;
+	min-height: 70vh;
+	padding: 30px;
+}
+#welcome-message{
 	text-align: center;
 	padding: 30px;
 }
+.input-field1{
+	margin-top: 180px;
+}
+.input-field2{
+	min-height: 65vh;
+}
 #warning-message{
-	display: none;
+	/* display: none; */
+	opacity: 0;
 	color: red;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 16px;
 }
 #welcome-message{
 	display: none;
-	color: blue;
+	/* color: blue; */
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -155,31 +141,64 @@ button{
 	margin: 20px;
 }
 button a{
-	color: #DC8665;
+	color: #fff;
 	font-size: 18px;
 	padding: 15px;
 	font-weight: bold;
+}
+button#html{
+	background-color: #E44D26;
+}
+button#css{
+	background-color: #379AD6;
+}
+button#js{
+	background-color: #F0DB4F;
+}
+button#js a{
+	color: #323330;
+}
+
+
+/* http://ianlunn.github.io/Hover/ */
+.hvr-overline-from-center {
+	transform: perspective(1px) translateZ(0);
+	position: relative;
+}
+.hvr-overline-from-center:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 51%;
+	right: 51%;
+	bottom: 0;
+	background:#4E54C8;
+	height: 4px;
+	transition-property: left, right;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+.hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
+	left: 0;
+	right: 0;
 }
 
 /* Grow Shadow */
 .hvr-grow-shadow {
 	display: inline-block;
 	vertical-align: middle;
-	-webkit-transform: perspective(1px) translateZ(0);
+	border: 1px solid rgba(0, 0, 0, 0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
-	-webkit-transition-property: box-shadow, transform;
 	transition-property: box-shadow, transform;
 }
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
-	box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-	-webkit-transform: scale(1.1);
+	box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
 	transform: scale(1.1);
 }
 footer{
 	text-align: center;
-	padding:35px;
+	padding:30px;
 }
 
