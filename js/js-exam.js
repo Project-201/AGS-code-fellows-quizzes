@@ -14,10 +14,6 @@ var choices = []
 var submit = document.getElementById("submit-exam");
 submit.addEventListener('click',submitAnswers);
 
-allUsers= JSON.parse(localStorage.getItem('userScore'));
-var currentUser = allUsers[allUsers.length -1];
-
-
 fetch('./js/questions.json')
     .then((res) => {
         return res.json();
@@ -83,8 +79,11 @@ function submitAnswers(e){
         return;
     }
 
-    // remove all events
-    choices.forEach((choice) => { choice.removeEventListener('click', selectOption); });
+    // remove all choices events
+    choices.forEach((choice) => { 
+        choice.removeEventListener('click', selectOption); 
+        choice.style.cursor = 'default';
+    });
 
     // check user answers
     userAnswers.forEach((val, idx) => { if(val == q[idx].answer) score++; })
@@ -101,6 +100,8 @@ function submitAnswers(e){
 }
 
 function addScore(){
+    allUsers= JSON.parse(localStorage.getItem('userScore'));
+    var currentUser = allUsers[allUsers.length -1];
     currentUser.jsScore = score;
     var TotalScore = currentUser.htmlScore + currentUser.cssScore + currentUser.jsScore;
     currentUser.totalScore = TotalScore;    
@@ -108,4 +109,5 @@ function addScore(){
 
     // remove submit event
     submit.removeEventListener('click', submitAnswers);
+    submit.style.cursor = 'default';
 }

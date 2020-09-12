@@ -4,13 +4,12 @@
 	box-sizing: border-box;
 }
 body{
-	color: #534666;
+	color: #fff;
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
-	background-color: #4e54c8;
-	background: linear-gradient(to top, black, #4e54c8);
+	background-color: #1B1F2B;
+	background-image: radial-gradient(circle at 90% 24%, rgba(209, 209, 209,0.04) 0%, rgba(209, 209, 209,0.04) 50%,rgba(160, 160, 160,0.04) 50%, rgba(160, 160, 160,0.04) 100%),radial-gradient(circle at 91% 63%, rgba(45, 45, 45,0.04) 0%, rgba(45, 45, 45,0.04) 50%,rgba(87, 87, 87,0.04) 50%, rgba(87, 87, 87,0.04) 100%),radial-gradient(circle at 17% 2%, rgba(124, 124, 124,0.04) 0%, rgba(124, 124, 124,0.04) 50%,rgba(117, 117, 117,0.04) 50%, rgba(117, 117, 117,0.04) 100%),linear-gradient(354deg, rgb(33, 20, 105),rgb(1, 15, 13));
 	width: 100%;
-	/* height: auto; */
 }
 .clear{
 	clear: both;
@@ -31,7 +30,6 @@ header a {
   color: black;
 }
 hr{
-  /* width: 90%; */
   border: 2px solid black;
   margin: 0 auto;
 }
@@ -43,27 +41,37 @@ h1{
 header nav{
   float: right;
 }
-
-/* header{
-	text-align: center;
-	border-bottom: #fff solid 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-} */
 #aboutUs{
   width: 60%;
-  border-radius: 10px;
-	background: #fff ;
-	margin: 20px auto;
-	box-shadow: -1px -1px 10px 2px #fff;
+	background-color: #ECF5FF;
+	margin: 0 auto;
 	position: relative;
   z-index: 3;
+  color: #000;
 }
-div:not(.clear){
-    border : 1px solid #ddd ;
+main div:not(.clear){
+  border : 1px solid #ddd ;
 	border-radius: 8px;
 	margin: 15px ;
-	background-color:  rgba(78,84,200,.3); /* rgb(204, 166, 151);*/
+}
+h3{
+  text-align: center;
+}
+.team{
+  width: 30%;
+  height: 620px;
+  padding: 13px;
+  float: left;
+}
+main img{
+  padding: 30px;
+  width:100%;
+  /* height: 200px; */
+  border-radius: 50%;
+  float:left
+}
+.team p {
+  padding: 5px;
 }
 aside.img{
   float: left;
@@ -88,7 +96,7 @@ section img{
   left: 51%;
   right: 51%;
   bottom: 0;
-  background:#4E54C8;
+  background:#0f9fffb0;
   height: 4px;
   transition-property: left, right;
   transition-duration: 0.3s;
@@ -121,7 +129,19 @@ div p{
 
 
 }
-footer{
+/* footer{
   text-align: center;
   padding:35px;
+} */
+footer{
+  text-align: center;
+  padding-bottom: 10px;
+}
+footer a{
+  display: block;
+  margin-top: 5px;
+  color: #000;
+}
+footer a:hover{
+  color: #0f9fffb0;
 }

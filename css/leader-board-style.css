@@ -8,18 +8,20 @@
 }
 
 body{
-	color: #534666;
-	font-family: 'Lato', sans-serif;
-	background-color: #ECF5FF;
+  background-image: url(./../img/dark-blue.jpg);
+  background-size: cover;
+  position: relative;
+  font-family: sans-serif;
+  background-image: radial-gradient(circle at 90% 24%, rgba(209, 209, 209,0.04) 0%, rgba(209, 209, 209,0.04) 50%,rgba(160, 160, 160,0.04) 50%, rgba(160, 160, 160,0.04) 100%),radial-gradient(circle at 91% 63%, rgba(45, 45, 45,0.04) 0%, rgba(45, 45, 45,0.04) 50%,rgba(87, 87, 87,0.04) 50%, rgba(87, 87, 87,0.04) 100%),radial-gradient(circle at 17% 2%, rgba(124, 124, 124,0.04) 0%, rgba(124, 124, 124,0.04) 50%,rgba(117, 117, 117,0.04) 50%, rgba(117, 117, 117,0.04) 100%),linear-gradient(354deg, rgb(33, 20, 105),rgb(1, 15, 13));
+  font-size: 18px;
 }
 
 #container{
+  
+	background-color: #ECF5FF;
 	width: 60%;
-	border-left: 3px solid #fff;
-	border-right: 3px solid #fff;
 	margin: 0 auto;
-	overflow: auto;
-	padding: 25px;
+	/* padding: 25px; */
 	position: relative;
 	z-index: 3;
 	min-height: 100vh;
@@ -30,15 +32,28 @@ a{
 }
 header{  
 	font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
-  min-height: 100px;
-  line-height: 100px;
+	font-size: 17px;
+	min-height: 100px;
+	line-height: 100px;
 }
-header a, footer a {
+header a{
   margin: 0 25px;
   padding: 10px;
-  color: black;
+  color: #000;
 }
+footer{
+  text-align: center;
+}
+footer a{
+  display: block;
+  margin-top: 5px;
+  color: #000;
+}
+footer a:hover{
+  color: #0f9fffb0;
+}
+
+
 /* http://ianlunn.github.io/Hover/ */
 .hvr-overline-from-center {
   transform: perspective(1px) translateZ(0);
@@ -51,7 +66,7 @@ header a, footer a {
   left: 51%;
   right: 51%;
   bottom: 0;
-  background:#4E54C8;
+  background:#0f9fffb0;
   height: 4px;
   transition-property: left, right;
   transition-duration: 0.3s;
@@ -61,18 +76,14 @@ header a, footer a {
   left: 0;
   right: 0;
 }
-hr{
-  /* width: 90%; */
-  border: 2px solid black;
-  margin: 0 auto;
-}
+
 header div{
   float: left;
   margin:15px 0 0 15px;
   height: 80px;
 }
 main{
-  min-height: 70vh;
+  min-height: 75vh;
 }
 
 header nav{
@@ -165,9 +176,4 @@ span:last-child{
   float: right;
 }
 
-
-footer{
-  text-align: center;
-  padding: 15px;
-}
 

@@ -45,16 +45,15 @@
 body{
 	color: #534666;
 	font-family: 'Lato', sans-serif;
-	background-color: #ECF5FF;
+	background-image: radial-gradient(circle at 90% 24%, rgba(209, 209, 209,0.04) 0%, rgba(209, 209, 209,0.04) 50%,rgba(160, 160, 160,0.04) 50%, rgba(160, 160, 160,0.04) 100%),radial-gradient(circle at 91% 63%, rgba(45, 45, 45,0.04) 0%, rgba(45, 45, 45,0.04) 50%,rgba(87, 87, 87,0.04) 50%, rgba(87, 87, 87,0.04) 100%),radial-gradient(circle at 17% 2%, rgba(124, 124, 124,0.04) 0%, rgba(124, 124, 124,0.04) 50%,rgba(117, 117, 117,0.04) 50%, rgba(117, 117, 117,0.04) 100%),linear-gradient(354deg, rgb(33, 20, 105),rgb(1, 15, 13));
 }
 a{
 	text-decoration: none;
 	color: rgb(32, 28, 21);
 }
 #container{
+	background-color: #ECF5FF;
 	width: 60%;
-	border-left: 3px solid #fff;
-	border-right: 3px solid #fff;
 	margin: 0 auto;
 	overflow: auto;
 	padding: 25px;
