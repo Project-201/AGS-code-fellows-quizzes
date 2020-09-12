@@ -90,7 +90,7 @@ function submitAnswers(e){
 
     //Display Results
     var results = document.getElementById('results');
-    results.innerHTML = `<h3>Result: You scored&nbsp; <span>${score}</span>&nbsp; out of &nbsp;<span>${total}&nbsp;</span></h3>`;
+    results.innerHTML = `<h3>Result: You have scored&nbsp; <span>${score}</span>&nbsp; out of &nbsp;<span>${total}&nbsp;</span></h3>`;
     var nextExam = document.getElementById("next-exam");
     nextExam.setAttribute('style','display:inline');
     noAnswer.setAttribute('style','opacity:0');
